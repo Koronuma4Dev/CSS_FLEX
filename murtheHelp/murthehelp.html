@@ -1,0 +1,127 @@
+
+
+
+<style>
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #1a1a63;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+.heading {
+    text-align: center;
+    color: #f8762a;
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.product-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.product-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    padding: 15px;
+    text-align: center;
+    width: 200px;
+    transition: transform 0.2s;
+}
+
+.product-card:hover {
+    transform: scale(1.05);
+}
+
+.product-card img {
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+.product-card h2 {
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+.price {
+    display: block;
+    font-size: 1.1em;
+    color: #27ae60;
+    margin: 10px 0;
+}
+
+button {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+
+
+@media (max-width: 768px) {
+    .product-list {
+        justify-content: center;
+    }
+    .product-card {
+        width: 90%;
+        margin: 10px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .product-card {
+        width: 100%;
+    }
+}
+</style>
+<main>
+    <body>
+        
+        <div class="container">
+            <h1 class="heading">Gardening Supplies</h1>
+            <div class="product-list">
+                <div class="product-card">
+                    <img src="https://via.placeholder.com/150" alt="Garden Hose">
+                    <h2>Premium Garden Hose</h2>
+                    <p>Durable and flexible garden hose for all your watering needs.</p>
+                    <span class="price">₱500.99</span>
+                    <button>Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="https://via.placeholder.com/150" alt="Watering Can">
+                    <h2>Classic Watering Can</h2>
+                    <p>Perfect for indoor and outdoor plants.</p>
+                    <span class="price">₱670.99</span>
+                    <button>Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="https://via.placeholder.com/150" alt="Garden Tools">
+                    <h2>Garden Tool Set</h2>
+                    <p>Essential tools for every gardener.</p>
+                    <span class="price">₱999.99</span>
+                    <button>Add to Cart</button>
+                </div>
+                
+            </div>
+        </div>
+    </body>
+</main>
